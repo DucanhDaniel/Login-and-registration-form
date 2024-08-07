@@ -1,0 +1,9 @@
+.root {
+    -fx-background-color: #99cc66;
+}
+#registerTitle {
+    -fx-alignment: center;
+}
+#messageLabel {
+    -fx-alignment: center;
+}

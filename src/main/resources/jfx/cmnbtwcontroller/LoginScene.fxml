@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfx.cmnbtwcontroller.LoginController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5153829.jpg" />
+         </image></ImageView>
+      <PasswordField fx:id="passwordLabel" layoutX="241.0" layoutY="200.0" prefHeight="26.0" prefWidth="214.0" text="admin" />
+      <Button fx:id="loginBtn" layoutX="387.0" layoutY="241.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="68.0" text="Login!">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="usernameLabel" layoutX="241.0" layoutY="162.0" prefHeight="26.0" prefWidth="214.0" text="admin" />
+      <Label layoutX="158.0" layoutY="165.0" text="Username">
+         <font>
+            <Font name="Lucida Console" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="203.0" text="Password">
+         <font>
+            <Font name="Lucida Console" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" layoutY="94.0" prefHeight="23.0" prefWidth="600.0" text="Login form">
+         <font>
+            <Font name="Lucida Console" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" layoutY="312.0" prefHeight="18.0" prefWidth="600.0" textFill="RED">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="274.0" prefHeight="26.0" prefWidth="205.0" text="Do not have an account?">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerBtn" layoutX="363.0" layoutY="274.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="92.0" text="Register!">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="91.0" fitWidth="122.0" layoutX="463.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@alice-aris.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+.root {
+    -fx-background-color: #99cc66;
+}
+#titleLabel {
+    -fx-alignment: center;
+}
+
+#messageLabel {
+    -fx-alignment: center;
+}

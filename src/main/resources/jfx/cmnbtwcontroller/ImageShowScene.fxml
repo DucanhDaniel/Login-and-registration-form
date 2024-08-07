@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseDragEntered="#displayImage" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfx.cmnbtwcontroller.ImageShowController">
+   <children>
+      <Button fx:id="switchBtn" layoutX="261.0" layoutY="282.0" mnemonicParsing="false" onAction="#displayImage" text="Switch!">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font></Button>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="203.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" rotate="-1.4">
+         <image>
+            <Image url="@arisu-blue-archive.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

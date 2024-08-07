@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfx.cmnbtwcontroller.RegisterSuccessController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5153829.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="146.0" layoutY="105.0" text="Congratulation!">
+         <font>
+            <Font name="Lucida Console" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="172.0" text="User registered successfully!">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnLoginBtn" layoutX="213.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleReturnLogin" text="Return to login page">
+         <font>
+            <Font name="Lucida Console" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="136.0" fitWidth="109.0" layoutX="454.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@blue-archive-bluesechi.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
