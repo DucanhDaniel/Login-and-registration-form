@@ -31,19 +31,26 @@ public class WelcomeController {
 
     Stage stage;
 
-    public void logout(ActionEvent event) {
-
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    public void logout(ActionEvent event) throws IOException  {
+        //TODO: Show alert to confirm logout
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Logout");
-        alert.setHeaderText("You are about to log out. Are you sure?");
-        alert.setContentText("Choose an option.");
+        alert.setHeaderText("Confirmation logout");
+        alert.setContentText("Are you sure you want to logout?");
+        alert.showAndWait();
 
-        if (alert.showAndWait().get() == ButtonType.OK) {
-            //get the current stage that we are working on it
-            stage = (Stage) scenePane.getScene().getWindow();
-            System.out.println("Logout successfully!");
-            stage.close();
-        }
+        //TODO: Switch to login scene
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoginScene.fxml")));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+
+        //TODO: Implement CSS for login scene
+        String css = Objects.requireNonNull(this.getClass().getResource("LoginSceneCSS.css")).toExternalForm();
+        scene.getStylesheets().add(css);
+
+        stage.setScene(scene);
+        stage.setTitle("Login form");
+        stage.show();
     }
 
     public void switchToImageShow(ActionEvent event) throws IOException {

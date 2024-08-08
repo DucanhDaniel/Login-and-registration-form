@@ -9,6 +9,7 @@ import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class Main extends Application {
@@ -30,12 +31,12 @@ public class Main extends Application {
         stage.show();
 
         stage.setOnCloseRequest(event -> {
-            event.consume(); // Consume the event, so it won't close the window'
+            event.consume(); // Consume the event, so it won't close the window
             logout(stage);
         });
     }
 
-    public void logout(Stage stage) {
+    public void logout(Stage stage) throws NoSuchElementException {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Exit");
