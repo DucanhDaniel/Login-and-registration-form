@@ -12,12 +12,12 @@ public class UserData {
     public static boolean checkValid(User user) {
         return users.contains(user);
     }
-    public static boolean loginOK(User user) {
+    public static User loginOK(User user) {
         for (User element : users) {
             if (user.getUsername().equals(element.getUsername())
             && user.getPassword().equals(element.getPassword()))
-                return true;
+                return element;
         }
-        return false;
+        return null;
     }
 }

@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        UserData.addUser(new User("admin", "admin"));
+        UserData.addUser(new User("admin", "admin", "Admin User", "1990-01-01", "Unknown"));
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getResource("LoginScene.fxml")));
         Scene scene = new Scene(root);

@@ -28,12 +28,12 @@ public class LoginController {
         String password = passwordLabel.getText();
         String username = usernameLabel.getText();
         User user = new User(username, password);
-        if (UserData.loginOK(user)) {
+        if (UserData.loginOK(user) != null) {
             //TODO: Switch to welcome scene
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("WelcomeScene.fxml")));
             Parent root = loader.load();
             WelcomeController controller = loader.getController();
-            controller.displayWelcomeMessage(username);
+            controller.displayWelcomeMessage(Objects.requireNonNull(UserData.loginOK(user)).getFullName());
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
 
